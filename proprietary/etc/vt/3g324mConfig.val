@@ -1,0 +1,285 @@
+# RADVISION H.323/3G-324M Stack Configuration File
+#
+# Value encodings:
+#    ''   -  String (and asciiz is not appended)
+#    \"\"   -  BMP string of ASCII characters
+#    []   -  Hex octet string
+#    <>   -  IP
+#    {}   -  Object ID
+#    %   -  Bit string
+#   Other -  Integer
+
+
+1 ApplicationConfig = 0
++  AutoAnswer = 0
+   UseWnsrp = 1
+   UseACP = 0
+   UseMONA =  0
+   UseAEC = 0
+   mpcMediaTypes = 4  #0:Unknown 1:AMR 2:AMRWB 3:H264 4:MPEG4 5:H263
+   UseMPCRxOnly = 0
+   AcpAudioEntry = 0
+   AcpVideoEntry = 0
+   MultipleH245Messages = 1
+   AutoAcceptChannels = 1
+   AutoEarlyMES = 0
+   muxLevel = 3 # Rv3G324mCallMuxLevel2
+   AutoCaps = 1 # it will be modified to TRUE
+   AutoCapsReplayMedia = 0
+   AutoOpenChannels = 1
+   autoChannel_Audio_Use = 1
+   autoChannel_Audio_rate = 31
+   autoChannel_Audio_name = 'amr'
+   autoChannel_Audio_alConfig = 'AL2 WithSequenceNumber'
+   autoChannel_Video_Use = 1
+   autoChannel_Video_rate = 224
+   autoChannel_Video_name = 'mpeg4'
+   autoChannel_Video_alConfig = 'AL2 WithSequenceNumber'
+   autoChannel_Video_bNullData = 0
+   autoChannel_Video_bIsDuplex = 0
+   VideoChannelBufferNum = 40
+   VideoChannelBufferFreeNum = 20
+   AudioChannelBufferNum = 15
+   TransportWriteInterval = 20		# loop interval of read/write thread in transport module, 20ms, 40ms..., maximum is 100ms
+   TransportDoFlowControl = 1			# if transport thread do flow control
+   LogStreamBuffers = 0
+   LogStreamBufferSize = 2097152	#2*1024*1024
+   ReflectTransportBuffers = 1
+   isdnBufferCorrectionSize = 0 #16
+   LogMode = 1 # 0:None,1:Screen,2:File, 3:Memory
+   LogMemorySize = 1048576 # 1024K
+   LogFileName = '/data/vt/3gapp.log'
+   LogFileSize = 524288 #512K
+   LogLevelInfo = 127
+   LogLevelDebug = 1
+   LogLevelError = 1
+   LogModule = 7 # 1:Application, 2:Transport, 4:Stack, 8:AudioEnc, 16:AudioDec, 32:VideoEnc, 64:VideoDec
+   VideoFastUpdatePicture = 1
+   VideoEncodeIntraInterval = 32
+   VideoEncodeFrameRate = 15
+   VideoEncodeTargetBitRate = 48000
+   VideoEncodeDelayTime = 200
+   VideoDecodeStreamMode = 0
+	 VendorIdentificationMes = 1
+	 VendorIdent-CountryCode = 97
+	 VendorIdent-Extension = 0
+	 VendorIdent-ManufacturerCode = 0
+	 VendorIdent-ProductNumber = 'SK-700'
+	 VendorIdent-VersionNumber = 'SKT 14 v1.37'
+	 VendorIdent-Match = '3GApp'
+	 LipSyncTime = 0
+	 SendThreadPriority = 80
+	 RecvThreadPriority = -1
+	 CameraRate = 8
+	 RingDelayTime = 2000 # ms
+	 BlockVideoDelay = 500 #ms
+	 AutoDropTimeout = 20 #s
+	 CallDurationLimitation = 0 #second
+	 MuxLevelSyncTimeout = 10000;
+
+1 3g324mSystem = 0
++  maxCalls = 4
+   maxTransmittingChannels = 4
+   maxReceivingChannels = 4
+   allocations = 0
++   controlBufferSize = 120
+    controlNumOfBuffers = 40
+    logicalChannelBufferSize = 2000
+    logicalChannelNumOfBuffers = 100
+    alxmBufferSize = 4000
+    alxmNumOfBuffers = 40
+    alxmInterleavingBufferSize = 4000
+    alxmInterleavingNumOfBuffers = 10
+    maxAsn1BufferSize = 6000
+    ach245NumOfBuffers = 15
+-  h223Params = 0
++   sendQueueSizePerChannel = 70
+    srpTimer = 2000
+    nsrpTimer = 200
+    al3RetransmissionTimer = 2000
+    numOfAlSduSaved = 100
+    n400Counter = 30
+    n402Counter = 5
+2 watchdog
++  interval = 10
+
+
+1 h245 = 0
+2  masterSlave = 0
++   terminalType = 130
+    timeout = 1000
+2  capabilities = 0
++   terminalCapabilitySet = 0
++    sequenceNumber = 1
+     protocolIdentifier = [00]
+     multiplexCapability = 0
++     h223Capability = 0
++      transportWithI-frames = 0
+       videoWithAL1 = 0
+       videoWithAL2 = 1
+       videoWithAL3 = 1
+       audioWithAL1 = 0
+       audioWithAL2 = 1
+       audioWithAL3 = 0
+       dataWithAL1 = 0
+       dataWithAL2 = 0
+       dataWithAL3 = 0
+       maximumAl2SDUSize = 512
+       maximumAl3SDUSize = 512
+       maximumDelayJitter = 10
+       h223MultiplexTableCapability = 0
++       basic = 0
+-      maxMUXPDUSizeCapability = 1
+       nsrpSupport = 1
+       mobileOperationTransmitCapability = 0
++       modeChangeCapability = 0
+        h223AnnexA = 1
+        h223AnnexADoubleFlag = 1
+        h223AnnexB = 1
+        h223AnnexBwithHeader = 1
+
+4    capabilityTable = 0
+
+#############################
+#  Video Codecs
+#############################
+
+# MPEG
+5     * = 0 # Sequence
++      capabilityTableEntryNumber = 4
+       capability = 0
++       receiveAndTransmitVideoCapability = 1
++        genericVideoCapability = 0
++         capabilityIdentifier = 0
++          standard = {itu-t recommendation h 245 1 0 0}
+-         maxBitRate = 400
+          nonCollapsing = 1
+10          * = 0
++           parameterIdentifier = 0
++            standard = 0
+-           parameterValue = 0
++            unsignedMax = 8
+10        * = 0
++         parameterIdentifier = 0
++          standard = 1
+-         parameterValue = 0
++          unsignedMax = 1
+
+
+# H.263
+5     * = 0
++      capabilityTableEntryNumber = 3
+       capability = 0
++       receiveAndTransmitVideoCapability = 1
++        h263VideoCapability = 0
++         qcifMPI = 2
+          maxBitRate = 400
+          unrestrictedVector = 0
+          arithmeticCoding = 0
+          advancedPrediction = 0
+          pbFrames = 0
+          temporalSpatialTradeOffCapability = 1
+          
+
+
+#############################
+#  Audio Codecs
+#############################
+
+
+# AMR
+5     * = 0
++      capabilityTableEntryNumber = 1
+       capability = 0
++       receiveAndTransmitAudioCapability = 1
++        genericAudioCapability = 0
++         capabilityIdentifier =
++          standard = {itu-t recommendation h 245 1 1 1}
+-         maxBitRate = 122
+#define maxsdu
+          collapsing = 1
+10         * = 0
++           parameterIdentifier = 0
++            standard = 0
+-           parameterValue = 0
++            unsignedMin = 1
+
+
+# g.723.1
+5     * = 0
++      capabilityTableEntryNumber = 2
+       capability = 0
++       receiveAudioCapability = 0
++        g7231 = 0
++         maxAl-sduAudioFrames = 6
+          silenceSuppression = 0
+
+
+4   capabilityDescriptors = 0
++    * = 0
++     capabilityDescriptorNumber = 0
+      simultaneousCapabilities = 0
++      * = 0
++       * = 3
+        * = 4
+-      * = 0
++       * = 1
+   		  * = 2
+
+3   timeout = 100
+-  channels = 0
+
+3   * = 0
++    name = 'amr'
+     dataType = 0
++     audioData = 0
++      genericAudioCapability = 0
++       capabilityIdentifier = 0
++        standard = { itu-t(0) recommendation(0) h(8) 245 generic-capabilities(1) audio(1) amr(1) }
+-       maxBitRate = 122
+        collapsing = 0
++        * = 0
++         parameterIdentifier = 0
++          standard = 0
+-         parameterValue = 0
++          unsignedMin = 1
+
+3   * = 0
++    name = 'mpeg4'
+     dataType = 0
++     videoData = 0
++      genericVideoCapability = 0
++       capabilityIdentifier = 0
++        standard = { itu-t(0) recommendation(0) h(8) 245 generic-capabilities(1) video(0) ISO-IEC14496-2(0) }
+-       maxBitRate = 400
+        nonCollapsing
+8        * = 0
++         parameterIdentifier = 0
++          standard = 0
+-         parameterValue = 0
++          unsignedMax = 8
+8        * = 0
++         parameterIdentifier = 0
++          standard = 1
+-         parameterValue = 0
++          unsignedMax = 1
+8        * = 0
++         parameterIdentifier = 0
++          standard = 2
+-         parameterValue = 0
++          octetString = [000001b008000001b509000001000000012000844014282c2090a31f]
+
+3   * = 0
++    name = 'h263'
+     dataType = 0
++     videoData = 0
++      h263VideoCapability = 0
++       qcifMPI = 2
+        maxBitRate = 400
+        unrestrictedVector = 0
+        arithmeticCoding = 0
+        advancedPrediction = 0
+        pbFrames = 0
+        temporalSpatialTradeOffCapability = 0
+        errorCompensation = 0
+
