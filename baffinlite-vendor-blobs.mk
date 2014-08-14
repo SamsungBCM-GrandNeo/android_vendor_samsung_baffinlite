@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/hw/gps.java.so:system/lib/hw/gps.java.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/sensors.java.so:system/lib/hw/sensors.java.so \
     vendor/samsung/baffinlite/proprietary/lib/libasound.so:system/lib/libasound.so \
+    vendor/samsung/baffinlite/proprietary/lib/libsavscmn.so:system/lib/libsavscmn.so \
     vendor/samsung/baffinlite/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/baffinlite/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
     vendor/samsung/baffinlite/proprietary/lib/lib_SamsungRec_V03011b.so:system/lib/lib_SamsungRec_V03011b.so \
