@@ -56,6 +56,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/lib_SoundAlive_V01013q.so:system/lib/lib_SoundAlive_V01013q.so \
     vendor/samsung/baffinlite/proprietary/lib/libat.so:system/lib/libat.so \
     vendor/samsung/baffinlite/proprietary/lib/libbralloc.so:system/lib/libbralloc.so \
+    vendor/samsung/baffinlite/proprietary/lib/libuip.so:system/lib/libuip.so \
+    vendor/samsung/baffinlite/proprietary/lib/libicuuc.so:system/lib/libicuuc.so \
     vendor/samsung/baffinlite/proprietary/lib/libat_stubs.so:system/lib/libat_stubs.so \
     vendor/samsung/baffinlite/proprietary/lib/libatlog.so:system/lib/libatlog.so \
     vendor/samsung/baffinlite/proprietary/lib/libbrcm_ril.so:system/lib/libbrcm_ril.so \
