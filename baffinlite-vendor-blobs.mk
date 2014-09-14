@@ -82,8 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/libSoundAlive_VSP_ver315b_arm.so:system/lib/libSoundAlive_VSP_ver315b_arm.so \
     vendor/samsung/baffinlite/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
     vendor/samsung/baffinlite/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
-    vendor/samsung/baffinlite/proprietary/system/lib/libjpeg_turbo.so:system/system/lib/libjpeg_turbo.so \
-    vendor/samsung/baffinlite/proprietary/system/lib/libaudiopolicy_sec.so:system/system/lib/libaudiopolicy_sec.so \
+    vendor/samsung/baffinlite/proprietary/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
+    vendor/samsung/baffinlite/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
     vendor/samsung/baffinlite/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
     vendor/samsung/baffinlite/proprietary/lib/libuecodec.so:system/lib/libuecodec.so \
     vendor/samsung/baffinlite/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
