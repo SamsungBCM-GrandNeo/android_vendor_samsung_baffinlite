@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
     vendor/samsung/baffinlite/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/baffinlite/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    vendor/samsung/baffinlite/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/audio.primary.java.so:system/lib/hw/audio.primary.java.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/audio.usb.java.so:system/lib/hw/audio.usb.java.so \
