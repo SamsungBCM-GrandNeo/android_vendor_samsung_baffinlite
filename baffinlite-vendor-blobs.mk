@@ -29,7 +29,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/bin/mttlogger:system/bin/mttlogger \
     vendor/samsung/baffinlite/proprietary/bin/npsmobex:system/bin/npsmobex \
     vendor/samsung/baffinlite/proprietary/bin/rild:system/bin/rild \
+    vendor/samsung/baffinlite/proprietary/bin/mfgloader:system/bin/mfgloader \
+    vendor/samsung/baffinlite/proprietary/bin/usb_portd:system/bin/usb_portd \
+    vendor/samsung/baffinlite/proprietary/bin/wlandutservice:system/bin/wlandutservice \
     vendor/samsung/baffinlite/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    vendor/samsung/baffinlite/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     vendor/samsung/baffinlite/proprietary/etc/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
     vendor/samsung/baffinlite/proprietary/etc/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
     vendor/samsung/baffinlite/proprietary/etc/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
@@ -78,6 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/libSoundAlive_VSP_ver315b_arm.so:system/lib/libSoundAlive_VSP_ver315b_arm.so \
     vendor/samsung/baffinlite/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
     vendor/samsung/baffinlite/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    vendor/samsung/baffinlite/proprietary/system/lib/libjpeg_turbo.so:system/system/lib/libjpeg_turbo.so \
+    vendor/samsung/baffinlite/proprietary/system/lib/libaudiopolicy_sec.so:system/system/lib/libaudiopolicy_sec.so \
     vendor/samsung/baffinlite/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
     vendor/samsung/baffinlite/proprietary/lib/libuecodec.so:system/lib/libuecodec.so \
     vendor/samsung/baffinlite/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
@@ -91,9 +97,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/baffinlite/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
     vendor/samsung/baffinlite/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/baffinlite/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
     vendor/samsung/baffinlite/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     vendor/samsung/baffinlite/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
+    vendor/samsung/baffinlite/proprietary/lib/libkeystore_client.so:system/lib/libkeystore_client.so \
+    vendor/samsung/baffinlite/proprietary/lib/libnewcapi2.so:system/lib/libnewcapi2.so \
+    vendor/samsung/baffinlite/proprietary/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
+    vendor/samsung/baffinlite/proprietary/lib/lib_DNSe_NRSS_ver225.so:system/lib/lib_DNSe_NRSS_ver225.so \
+    vendor/samsung/baffinlite/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
+    vendor/samsung/baffinlite/proprietary/lib/libISP.so:system/lib/libISP.so \
+    vendor/samsung/baffinlite/proprietary/lib/libisp2.so:system/lib/libisp2.so \
+    vendor/samsung/baffinlite/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
     vendor/samsung/baffinlite/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/samsung/baffinlite/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/baffinlite/proprietary/lib/egl/libGLES_java.so:system/lib/egl/libGLES_java.so \
