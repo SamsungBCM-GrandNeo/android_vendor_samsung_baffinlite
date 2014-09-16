@@ -100,6 +100,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/libVCE_imageconv.so:system/lib/libVCE_imageconv.so \
     vendor/samsung/baffinlite/proprietary/lib/libVCE_vtq.so:system/lib/libVCE_vtq.so \
     vendor/samsung/baffinlite/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
+    vendor/samsung/baffinlite/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
+    vendor/samsung/baffinlite/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
     vendor/samsung/baffinlite/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
     vendor/samsung/baffinlite/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
     vendor/samsung/baffinlite/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
