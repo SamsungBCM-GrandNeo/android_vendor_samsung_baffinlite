@@ -130,9 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
     vendor/samsung/baffinlite/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-    vendor/samsung/baffinlite/proprietary/lib/hw/audio_policy.java.so:system/lib/hw/audio_policy.java.so \
-    vendor/samsung/baffinlite/proprietary/lib/hw/audio.primary.goldfish.so:system/lib/hw/audio.primary.goldfish.so \
-    vendor/samsung/baffinlite/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/camera.goldfish.so:system/lib/hw/camera.goldfish.so \
     vendor/samsung/baffinlite/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
