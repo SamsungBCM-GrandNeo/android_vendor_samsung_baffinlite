@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     vendor/samsung/baffinlite/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/baffinlite/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/baffinlite/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
     vendor/samsung/baffinlite/proprietary/etc/Volume.db:system/etc/Volume.db \
     vendor/samsung/baffinlite/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/baffinlite/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \

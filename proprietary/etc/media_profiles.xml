@@ -178,9 +178,8 @@
                    sampleRate="48000"
                    channels="1" />
         </EncoderProfile>
-<!-- Unsupported profiles(quality) in CM11 sources (frameworks/av)
 
-		<EncoderProfile quality="m4v_720p" fileFormat="mp4" duration="30">
+	<EncoderProfile quality="m4v_720p" fileFormat="mp4" duration="30">
             <Video codec="m4v"
                    bitRate="4000000"
                    width="1280"
