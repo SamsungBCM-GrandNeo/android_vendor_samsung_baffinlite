@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/bin/usb_portd:system/bin/usb_portd \
     vendor/samsung/baffinlite/proprietary/bin/wlandutservice:system/bin/wlandutservice \
     vendor/samsung/baffinlite/proprietary/etc/asound.conf:system/etc/asound.conf \
+    vendor/samsung/baffinlite/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
     vendor/samsung/baffinlite/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     vendor/samsung/baffinlite/proprietary/etc/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
     vendor/samsung/baffinlite/proprietary/etc/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
