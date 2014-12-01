@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/baffinlite/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
     vendor/samsung/baffinlite/proprietary/lib/lib_SamsungRec_V03011b.so:system/lib/lib_SamsungRec_V03011b.so \
     vendor/samsung/baffinlite/proprietary/lib/lib_SoundAlive_V01013q.so:system/lib/lib_SoundAlive_V01013q.so \
+    vendor/samsung/baffinlite/proprietary/lib/libat.so:system/lib/libat.so \
     vendor/samsung/baffinlite/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/baffinlite/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     vendor/samsung/baffinlite/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
